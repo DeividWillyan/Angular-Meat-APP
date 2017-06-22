@@ -370,5 +370,49 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "adress": "Rua Josephina",
+      "number": "86",
+      "optionalAdress": "",
+      "paymentOption": "MON",
+      "OrderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 2,
+          "menuId": "donut"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "adress": "rua x",
+      "number": "2",
+      "optionalAdress": "",
+      "paymentOption": "MON",
+      "OrderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "adress": "Rua wow",
+      "number": "8",
+      "optionalAdress": "12",
+      "paymentOption": "REF",
+      "OrderItems": [
+        {
+          "quantity": 2,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 3
+    }
+  ]
 }
