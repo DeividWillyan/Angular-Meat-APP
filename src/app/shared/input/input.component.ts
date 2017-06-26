@@ -25,7 +25,7 @@ export class InputComponent implements OnInit, AfterContentInit {
   ngAfterContentInit() {
     this.input = this.model || this.control
     if(this.input === undefined) {
-      throw new Error(`${this.label} Este componente deve ser usado com uma diretiva NgModel ou FormControlName `)
+      throw new Error(`${this.label} <-- Este componente deve ser usado com uma diretiva NgModel ou FormControlName `)
     }
   }
 

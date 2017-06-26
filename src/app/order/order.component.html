@@ -16,6 +16,10 @@
                 <p class="lead">Seus Dados:</p>
               </div>
 
+              <div class="col-xs-12">
+                <span class="help-block pull-right has-error" *ngIf="emaisNotEquals"><i class="fa fa-remove"></i>email-s não conferem</span>
+              </div>
+
               <div class="col-sm-6 col-xs-12">
                 <mt-input-container errorMessage="Campo Obrigatório." label="Nome">
                   <input class="form-control" formControlName="name" placeholder="Nome" autocomplete="off">
