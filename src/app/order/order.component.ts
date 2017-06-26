@@ -39,7 +39,7 @@ export class OrderComponent implements OnInit {
         number: this.formBuilder.control('', [Validators.required, Validators.pattern(this.numberPattern)]),
         optionalAdress: this.formBuilder.control(''),
         paymentOption: this.formBuilder.control('', [Validators.required])
-    }, {validators: OrderComponent.equalsTo } )
+    }, {validator: OrderComponent.equalsTo})
   }
 
   static equalsTo(group: AbstractControl): {[key:string]: boolean} {
@@ -48,7 +48,7 @@ export class OrderComponent implements OnInit {
       if (!email || !emailConfirmation) {
         return undefined
       }
-      if (email !== emailConfirmation) {
+      if (email.value !== emailConfirmation.value) {
         return {emaisNotEquals: true}
       }
       return undefined

@@ -17,7 +17,7 @@
               </div>
 
               <div class="col-xs-12">
-                <span class="help-block pull-right has-error" *ngIf="emaisNotEquals"><i class="fa fa-remove"></i>email-s não conferem</span>
+                <span class="help-block pull-right has-error-block" *ngIf="orderForm.hasError('emaisNotEquals')"><i class="fa fa-remove"></i>email-s não conferem</span>
               </div>
 
               <div class="col-sm-6 col-xs-12">
