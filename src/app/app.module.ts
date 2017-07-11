@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 // configuração para as rotas
 // nos import do NgModule colocar RouterModule.forRoot(ROUTES)
@@ -28,6 +29,7 @@ import { OrderService } from './order/order.service';
 import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { RatingComponent } from './shared/rating/rating.component';
+import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
@@ -48,9 +50,11 @@ import { RatingComponent } from './shared/rating/rating.component';
     DeliveryCostsComponent,
     OrderSummaryComponent,
     RatingComponent,
+    SnackbarComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule,
     FormsModule,
     ReactiveFormsModule,
