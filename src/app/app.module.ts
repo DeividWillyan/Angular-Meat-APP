@@ -30,6 +30,7 @@ import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.co
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { RatingComponent } from './shared/rating/rating.component';
 import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component';
+import { NotificationService } from './shared/messages/notification.service'
 
 @NgModule({
   declarations: [
@@ -60,7 +61,7 @@ import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, ShoppingCartService, OrderService],
+  providers: [RestaurantsService, ShoppingCartService, OrderService, NotificationService],
   bootstrap: [AppComponent]
 })
 
